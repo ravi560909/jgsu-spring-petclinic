@@ -2,7 +2,7 @@ pipeline {
     agent {
         label 'dev'
     }
-  triggers { pollscm (* * * * *) }  
+  triggers { pollSCM('* * * * *') }  
 
     stages {
         stage('Fetch code') {
